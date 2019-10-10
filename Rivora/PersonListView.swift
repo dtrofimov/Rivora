@@ -18,9 +18,12 @@ struct PersonListView: View {
 
     var persons: [Person]
     var body: some View {
-        List(persons) {
-            Row(person: $0)
+        List(persons) { person in
+            NavigationLink(destination: PersonDetailsView(person: person)) {
+                Row(person: person)
+            }
         }
+        .navigationBarTitle(Text("Persons"))
     }
 }
 
