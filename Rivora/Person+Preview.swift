@@ -8,6 +8,10 @@
 
 import Foundation
 
-let personPreview1 = Person(id: "1", firstName: "John", lastName: "Doe")
-let personPreview2 = Person(id: "2", firstName: "Вячеслав", lastName: "Скоробогатько")
-let personsPreview: [Person] = [personPreview1, personPreview2]
+extension Person {
+    struct Preview {
+        static let person1 = Person(id: "1", firstName: "John", lastName: "Doe")
+        static let person2 = Person(id: "2", firstName: "Вячеслав", lastName: "Скоробогатько")
+        static let persons: [Person] = [person1, person2]
+    }
+}

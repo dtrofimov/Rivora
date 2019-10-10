@@ -30,7 +30,7 @@ struct PersonListView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            PersonListView(persons: personsPreview)
+            PersonListView(persons: Person.Preview.persons)
         }
     }
 }
