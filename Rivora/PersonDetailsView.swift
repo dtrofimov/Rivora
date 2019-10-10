@@ -26,6 +26,8 @@ struct PersonDetailsView: View {
 
 struct PersonDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonDetailsView(person: personPreview1)
+        NavigationView {
+            PersonDetailsView(person: personPreview1)
+        }
     }
 }
