@@ -9,18 +9,13 @@
 import SwiftUI
 
 struct PersonListView: View {
-    struct Row: View {
-        var person: Person
-        var body: some View {
-            Text("\(person.firstName) \(person.lastName)")
-        }
-    }
-
     var persons: [Person]
     var body: some View {
-        List(persons) { person in
-            NavigationLink(destination: PersonDetailsView(person: person)) {
-                Row(person: person)
+        List {
+            ForEach(persons) { person in
+                NavigationLink(destination: PersonDetailsView(person: person)) {
+                    Row(person: person)
+                }
             }
         }
         .navigationBarTitle(Text("Persons"))
@@ -30,7 +25,8 @@ struct PersonListView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            PersonListView(persons: Person.Preview.persons)
+            PersonListView(persons: Person.Preview.manyPersons)
         }
+        .previewDevice(.init(rawValue: "iPhone SE"))
     }
 }
