@@ -1,5 +1,5 @@
 //
-//  PersoneListRow.swift
+//  PersonListRow.swift
 //  Rivora
 //
 //  Created by Dmitrii Trofimov on 11.03.2020.
