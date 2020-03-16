@@ -9,23 +9,27 @@
 import SwiftUI
 
 struct PersonListView: View {
-    var persons: [Person]
+    class Model: NSObject, ObservableObject {
+        @Published var title: String = ""
+        @Published var rows: [Row.Model] = []
+    }
+
+    @ObservedObject var model: Model
+
     var body: some View {
         List {
-            ForEach(persons) { person in
-                NavigationLink(destination: PersonDetailsView(person: person)) {
-                    Row(person: person)
-                }
+            ForEach(model.rows) { rowModel in
+                Row(model: rowModel)
             }
         }
-        .navigationBarTitle(Text("Persons"))
+        .navigationBarTitle(Text(model.title))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            PersonListView(persons: Person.Preview.manyPersons)
+            PersonListView(model: PersonListViewModel(persons: Person.Preview.manyPersons))
         }
         .previewDevice(.init(rawValue: "iPhone SE"))
     }

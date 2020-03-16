@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284FD85E241F70DF00CD2F7F /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD85D241F70DF00CD2F7F /* PersonListViewModel.swift */; };
+		284FD860241F713000CD2F7F /* PersonListRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD85F241F713000CD2F7F /* PersonListRowModel.swift */; };
+		284FD862241F797800CD2F7F /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD861241F797800CD2F7F /* View+AnyView.swift */; };
 		28545A362419031C000A0B87 /* PersonListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28545A352419031C000A0B87 /* PersonListRow.swift */; };
 		28545A3824191819000A0B87 /* ListStylingDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28545A3724191819000A0B87 /* ListStylingDemoView.swift */; };
 		28E6A8BC241A1469007EEFB2 /* Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A8BB241A1469007EEFB2 /* Introspection.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284FD85D241F70DF00CD2F7F /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
+		284FD85F241F713000CD2F7F /* PersonListRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListRowModel.swift; sourceTree = "<group>"; };
+		284FD861241F797800CD2F7F /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
 		28545A352419031C000A0B87 /* PersonListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListRow.swift; sourceTree = "<group>"; };
 		28545A3724191819000A0B87 /* ListStylingDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStylingDemoView.swift; sourceTree = "<group>"; };
 		28E6A8BB241A1469007EEFB2 /* Introspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introspection.swift; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				28E6A8BB241A1469007EEFB2 /* Introspection.swift */,
+				284FD861241F797800CD2F7F /* View+AnyView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -101,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				323E2C25233AC80800127F2C /* PersonListView.swift */,
+				284FD85D241F70DF00CD2F7F /* PersonListViewModel.swift */,
 				28545A352419031C000A0B87 /* PersonListRow.swift */,
+				284FD85F241F713000CD2F7F /* PersonListRowModel.swift */,
 			);
 			path = PersonList;
 			sourceTree = "<group>";
@@ -293,9 +302,12 @@
 				28E6A8BC241A1469007EEFB2 /* Introspection.swift in Sources */,
 				328D6243234DCB0100E20E18 /* Person+Preview.swift in Sources */,
 				28545A3824191819000A0B87 /* ListStylingDemoView.swift in Sources */,
+				284FD85E241F70DF00CD2F7F /* PersonListViewModel.swift in Sources */,
 				323E2C22233AC80800127F2C /* AppDelegate.swift in Sources */,
 				323E2C24233AC80800127F2C /* SceneDelegate.swift in Sources */,
+				284FD860241F713000CD2F7F /* PersonListRowModel.swift in Sources */,
 				32E6F3C7234B96A700A34879 /* Person.swift in Sources */,
+				284FD862241F797800CD2F7F /* View+AnyView.swift in Sources */,
 				323E2C26233AC80800127F2C /* PersonListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +453,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmitriitrofimov.Rivora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -461,6 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmitriitrofimov.Rivora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

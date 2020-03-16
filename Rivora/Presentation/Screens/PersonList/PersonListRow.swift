@@ -11,17 +11,27 @@ import SwiftUI
 
 extension PersonListView {
     struct Row: View {
-        var person: Person
+        class Model: NSObject, ObservableObject, Identifiable {
+            var id: String = ""
+            @Published var firstName: String = ""
+            @Published var lastName: String = ""
+            var viewToOpen: AnyView { fatalError("Not implemented") }
+        }
+
+        @ObservedObject var model: Model
+
         var body: some View {
-            Text("\(person.firstName) \(person.lastName)")
-                .listRowBackground(Color.green)
+            NavigationLink(destination: model.viewToOpen) {
+                Text("\(model.firstName) \(model.lastName)")
+                    .listRowBackground(Color.green)
+            }
         }
     }
 }
 
 struct PersonListRow_Previews: PreviewProvider {
     static var previews: some View {
-        PersonListView.Row(person: Person.Preview.person1)
+        PersonListView.Row(model: PersonListRowModel(person: Person.Preview.person1))
             .previewLayout(.fixed(width: 300, height: 40))
     }
 }
