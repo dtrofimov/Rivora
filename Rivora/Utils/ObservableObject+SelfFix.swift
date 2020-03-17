@@ -18,6 +18,8 @@ extension ObservableObject {
          Abort trap: 6
          Global is external, but doesn't have external or weak linkage!
 
+     The crash is also reported [here](https://forums.swift.org/t/crash-when-extension-changes-published-from-separate-file/33224).
+
      However, there's no crash if a property is mutated not for `self`, but for a separate variable of the same type.
 
      This computed property provides a convenient access to `self`, to avoid declaring a separate variable explicitly.
