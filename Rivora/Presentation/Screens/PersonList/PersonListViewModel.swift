@@ -24,7 +24,7 @@ class PersonListViewModel: PersonListView.Model {
 
         override var viewToOpen: AnyView {
             // TODO: Move this to a dependency resolver
-            PersonDetailsView(person: person).asAnyView
+            PersonDetailsView(model: PersonDetailsViewModel(person: person)).asAnyView
         }
 
     }
