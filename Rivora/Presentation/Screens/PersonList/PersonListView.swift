@@ -26,7 +26,7 @@ struct PersonListView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PersonListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             PersonListView(model: PersonListViewModel(persons: Person.Preview.manyPersons))

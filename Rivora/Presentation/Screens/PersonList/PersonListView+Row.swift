@@ -1,5 +1,5 @@
 //
-//  PersonListRow.swift
+//  PersonListView+Row.swift
 //  Rivora
 //
 //  Created by Dmitrii Trofimov on 11.03.2020.
@@ -12,7 +12,7 @@ import SwiftUI
 extension PersonListView {
     struct Row: View {
         class Model: NSObject, ObservableObject, Identifiable {
-            var id: String = ""
+            var id: String { fatalError("Not implemented") }
             @Published var firstName: String = ""
             @Published var lastName: String = ""
             var viewToOpen: AnyView { fatalError("Not implemented") }
@@ -21,7 +21,7 @@ extension PersonListView {
         @ObservedObject var model: Model
 
         var body: some View {
-            NavigationLink(destination: model.viewToOpen) {
+            NavigationLink(destination: LazyView(self.model.viewToOpen)) {
                 Text("\(model.firstName) \(model.lastName)")
                     .listRowBackground(Color.green)
             }
@@ -31,7 +31,7 @@ extension PersonListView {
 
 struct PersonListRow_Previews: PreviewProvider {
     static var previews: some View {
-        PersonListView.Row(model: PersonListRowModel(person: Person.Preview.person1))
+        PersonListView.Row(model: PersonListViewModel.Row(person: Person.Preview.person1))
             .previewLayout(.fixed(width: 300, height: 40))
     }
 }
