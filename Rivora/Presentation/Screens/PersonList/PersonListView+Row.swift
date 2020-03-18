@@ -11,14 +11,14 @@ import SwiftUI
 
 extension PersonListView {
     struct Row: View {
-        class Model: NSObject, ObservableObject, Identifiable {
+        class Model: ObservableObject, Identifiable {
             var id: String { fatalError("Not implemented") }
             @Published var firstName: String = ""
             @Published var lastName: String = ""
             var viewToOpen: AnyView { fatalError("Not implemented") }
         }
 
-        @ObservedObject var model: Model
+        @ObservedObject private(set) var model: Model
 
         var body: some View {
             NavigationLink(destination: LazyView(self.model.viewToOpen)) {

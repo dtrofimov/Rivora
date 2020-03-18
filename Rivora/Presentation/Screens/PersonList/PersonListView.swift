@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct PersonListView: View {
-    class Model: NSObject, ObservableObject {
+    class Model: ObservableObject {
         @Published var title: String = ""
         @Published var rows: [Row.Model] = []
     }
 
-    @ObservedObject var model: Model
+    @ObservedObject private(set) var model: Model
 
     var body: some View {
         List {
