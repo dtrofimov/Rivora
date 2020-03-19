@@ -13,8 +13,11 @@
 		284FD899241FEA3200CD2F7F /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD898241FEA3200CD2F7F /* LazyView.swift */; };
 		284FD89B24209E6C00CD2F7F /* ObservableObject+SelfFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD89A24209E6C00CD2F7F /* ObservableObject+SelfFix.swift */; };
 		284FD89D2420BF4700CD2F7F /* View+LogLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD89C2420BF4700CD2F7F /* View+LogLoading.swift */; };
+		284FD8C42422532200CD2F7F /* PublisherMVVMExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD8C32422532200CD2F7F /* PublisherMVVMExampleView.swift */; };
 		28545A362419031C000A0B87 /* PersonListView+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28545A352419031C000A0B87 /* PersonListView+Row.swift */; };
 		28545A3824191819000A0B87 /* ListStylingDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28545A3724191819000A0B87 /* ListStylingDemoView.swift */; };
+		286AEDFC2423562600451E6D /* View+ReloadOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AEDFB2423562600451E6D /* View+ReloadOn.swift */; };
+		286AEDFF24235CB000451E6D /* PublisherMVVMExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AEDFE24235CB000451E6D /* PublisherMVVMExampleViewModel.swift */; };
 		28E6A8BC241A1469007EEFB2 /* Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A8BB241A1469007EEFB2 /* Introspection.swift */; };
 		32237B03234E359D00A7984F /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32237B02234E359D00A7984F /* PersonDetailsView.swift */; };
 		323E2C22233AC80800127F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E2C21233AC80800127F2C /* AppDelegate.swift */; };
@@ -35,8 +38,11 @@
 		284FD898241FEA3200CD2F7F /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		284FD89A24209E6C00CD2F7F /* ObservableObject+SelfFix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableObject+SelfFix.swift"; sourceTree = "<group>"; };
 		284FD89C2420BF4700CD2F7F /* View+LogLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+LogLoading.swift"; sourceTree = "<group>"; };
+		284FD8C32422532200CD2F7F /* PublisherMVVMExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherMVVMExampleView.swift; sourceTree = "<group>"; };
 		28545A352419031C000A0B87 /* PersonListView+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonListView+Row.swift"; sourceTree = "<group>"; };
 		28545A3724191819000A0B87 /* ListStylingDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStylingDemoView.swift; sourceTree = "<group>"; };
+		286AEDFB2423562600451E6D /* View+ReloadOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ReloadOn.swift"; sourceTree = "<group>"; };
+		286AEDFE24235CB000451E6D /* PublisherMVVMExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherMVVMExampleViewModel.swift; sourceTree = "<group>"; };
 		28E6A8BB241A1469007EEFB2 /* Introspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introspection.swift; sourceTree = "<group>"; };
 		32237B02234E359D00A7984F /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		323E2C1E233AC80800127F2C /* Rivora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rivora.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,8 +88,18 @@
 				284FD898241FEA3200CD2F7F /* LazyView.swift */,
 				284FD89A24209E6C00CD2F7F /* ObservableObject+SelfFix.swift */,
 				284FD89C2420BF4700CD2F7F /* View+LogLoading.swift */,
+				286AEDFB2423562600451E6D /* View+ReloadOn.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		286AEDFD24235C8E00451E6D /* PublisherMVVMExample */ = {
+			isa = PBXGroup;
+			children = (
+				284FD8C32422532200CD2F7F /* PublisherMVVMExampleView.swift */,
+				286AEDFE24235CB000451E6D /* PublisherMVVMExampleViewModel.swift */,
+			);
+			path = PublisherMVVMExample;
 			sourceTree = "<group>";
 		};
 		28E6A8BE241A2FE3007EEFB2 /* Model */ = {
@@ -106,6 +122,7 @@
 		28E6A8C0241A3033007EEFB2 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				286AEDFD24235C8E00451E6D /* PublisherMVVMExample */,
 				28E6A8C3241A322E007EEFB2 /* ListStylingDemo */,
 				28E6A8C1241A304A007EEFB2 /* PersonList */,
 				28E6A8C2241A3050007EEFB2 /* PersonDetails */,
@@ -310,7 +327,9 @@
 				28545A362419031C000A0B87 /* PersonListView+Row.swift in Sources */,
 				32237B03234E359D00A7984F /* PersonDetailsView.swift in Sources */,
 				28E6A8BC241A1469007EEFB2 /* Introspection.swift in Sources */,
+				286AEDFF24235CB000451E6D /* PublisherMVVMExampleViewModel.swift in Sources */,
 				328D6243234DCB0100E20E18 /* Person+Preview.swift in Sources */,
+				284FD8C42422532200CD2F7F /* PublisherMVVMExampleView.swift in Sources */,
 				284FD89B24209E6C00CD2F7F /* ObservableObject+SelfFix.swift in Sources */,
 				28545A3824191819000A0B87 /* ListStylingDemoView.swift in Sources */,
 				284FD899241FEA3200CD2F7F /* LazyView.swift in Sources */,
@@ -319,6 +338,7 @@
 				323E2C24233AC80800127F2C /* SceneDelegate.swift in Sources */,
 				32E6F3C7234B96A700A34879 /* Person.swift in Sources */,
 				284FD862241F797800CD2F7F /* View+AnyView.swift in Sources */,
+				286AEDFC2423562600451E6D /* View+ReloadOn.swift in Sources */,
 				284FD89D2420BF4700CD2F7F /* View+LogLoading.swift in Sources */,
 				323E2C26233AC80800127F2C /* PersonListView.swift in Sources */,
 			);
