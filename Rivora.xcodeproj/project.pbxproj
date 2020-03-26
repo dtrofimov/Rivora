@@ -85,6 +85,13 @@
 		28545A392419234A000A0B87 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2855FD2A242CC845000D161C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
 				28E6A8BB241A1469007EEFB2 /* Introspection.swift */,
 				284FD861241F797800CD2F7F /* View+AnyView.swift */,
 				284FD898241FEA3200CD2F7F /* LazyView.swift */,
@@ -117,6 +124,7 @@
 		28E6A8BF241A3023007EEFB2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				2855FD2A242CC845000D161C /* Utils */,
 				28E6A8C0241A3033007EEFB2 /* Screens */,
 			);
 			path = Presentation;
