@@ -9,29 +9,28 @@
 import Foundation
 import SwiftUI // TODO: Remove coupling with SwiftUI
 
-class PersonListViewModel: PersonListView.Model {
-    class Row: PersonListView.Row.Model {
-        let person: Person
-
+class PersonListViewModelImpl: PersonListView.Model, ObservableObject {
+    class Item: ObservableObject, PersonListView.Row.Model {
+        var person: Person
         init(person: Person) {
             self.person = person
-            super.init()
-            viewModel.firstName = person.firstName
-            viewModel.lastName = person.lastName
         }
 
-        override var id: String { person.id }
+        var id: String { person.id }
+        var firstName: String { person.firstName }
+        var lastName: String { person.lastName }
 
-        override var viewToOpen: AnyView {
+        var viewToOpen: AnyView {
             // TODO: Move this to a dependency resolver
-            PersonDetailsView(model: PersonDetailsViewModel(person: person)).asAnyView
+            PersonDetailsView(model: PersonDetailsViewModelImpl(person: person)).asAnyView
         }
-
     }
 
+    let items: [Item]
     init(persons: [Person]) {
-        super.init()
-        viewModel.title = "Persons"
-        viewModel.rows = persons.map { Row(person: $0) }
+        items = persons.map { Item(person: $0) }
     }
+
+    var title: String { "Persons" }
+    var rows: [PersonListRowViewModel] { items }
 }

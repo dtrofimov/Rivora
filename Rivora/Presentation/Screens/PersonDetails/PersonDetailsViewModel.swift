@@ -8,14 +8,13 @@
 
 import Foundation
 
-class PersonDetailsViewModel: PersonDetailsView.Model {
+class PersonDetailsViewModelImpl: PersonDetailsView.Model, ObservableObject {
     let person: Person
-
     init(person: Person) {
         self.person = person
-        super.init()
-        viewModel.title = person.firstName
-        viewModel.firstName = person.firstName
-        viewModel.lastName = person.lastName
     }
+
+    var title: String { person.firstName }
+    var firstName: String { person.firstName }
+    var lastName: String { person.lastName }
 }

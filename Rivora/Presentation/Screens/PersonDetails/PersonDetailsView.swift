@@ -8,14 +8,15 @@
 
 import SwiftUI
 
-struct PersonDetailsView: View {
-    class Model: NSObject, ObservableObject {
-        @Published var title: String = ""
-        @Published var firstName: String = ""
-        @Published var lastName: String = ""
-    }
+protocol PersonDetailsViewModel: ObservableModel {
+    var title: String { get }
+    var firstName: String { get }
+    var lastName: String { get }
+}
 
-    @ObservedObject var model: Model
+struct PersonDetailsView: View {
+    typealias Model = PersonDetailsViewModel
+    @ObservedModel var model: Model
 
     var body: some View {
         HStack(alignment: .top) {
@@ -33,7 +34,7 @@ struct PersonDetailsView: View {
 struct PersonDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            PersonDetailsView(model: PersonDetailsViewModel(person: Person.Preview.person1))
+            PersonDetailsView(model: PersonDetailsViewModelImpl(person: Person.Preview.person1))
         }
     }
 }

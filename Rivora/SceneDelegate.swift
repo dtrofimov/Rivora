@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = NavigationView {
-            PersonListView(model: PersonListViewModel(persons: Person.Preview.manyPersons))
+            PersonListView(model: PersonListViewModelImpl(persons: Person.Preview.manyPersons))
         }
 
         // Use a UIHostingController as window root view controller.

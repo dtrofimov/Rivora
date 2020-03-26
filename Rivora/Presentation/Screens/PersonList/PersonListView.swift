@@ -8,17 +8,18 @@
 
 import SwiftUI
 
-struct PersonListView: View {
-    class Model: ObservableObject {
-        @Published var title: String = ""
-        @Published var rows: [Row.Model] = []
-    }
+protocol PersonListViewModel: ObservableModel {
+    var title: String { get }
+    var rows: [PersonListRowViewModel] { get }
+}
 
-    @ObservedObject private(set) var model: Model
+struct PersonListView: View {
+    typealias Model = PersonListViewModel
+    @ObservedModel private(set) var model: Model
 
     var body: some View {
         List {
-            ForEach(model.rows) { rowModel in
+            ForEach(model.rows, id: \.id) { rowModel in
                 Row(model: rowModel)
             }
         }
@@ -29,7 +30,7 @@ struct PersonListView: View {
 struct PersonListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            PersonListView(model: PersonListViewModel(persons: Person.Preview.manyPersons))
+            PersonListView(model: PersonListViewModelImpl(persons: Person.Preview.manyPersons))
         }
         .previewDevice(.init(rawValue: "iPhone SE"))
     }
