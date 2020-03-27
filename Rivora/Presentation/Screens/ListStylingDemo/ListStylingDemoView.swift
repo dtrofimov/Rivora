@@ -21,7 +21,7 @@ struct ListStylingDemoView: View {
                 }
             ) {
                 ForEach(1...3, id: \.self) { i in
-                    Text("qwer")
+                    Text("Cell")
                         .padding(20)
                         .background(Color.yellow)
                         .listRowBackground(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 0.5)))
@@ -39,7 +39,7 @@ struct ListStylingDemoView: View {
                     }
                 ) {
                     ForEach((1...10).map { "\(iSection)_\($0)" }, id: \.self) { id in
-                        Text("asdf \(id)")
+                        Text("Cell \(id)")
                         .listRowBackground(Color(#colorLiteral(red: 0, green: 0, blue: 1, alpha: 0.5)))
                     }
                     .introspectTableViewCell {
@@ -56,7 +56,7 @@ struct ListStylingDemoView: View {
         }
         .padding(20)
         .background(Image("background").resizable(resizingMode: .tile))
-        .navigationBarTitle("asdf")
+        .navigationBarTitle("List Styling Demo")
     }
 }
 

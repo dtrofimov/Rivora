@@ -11,7 +11,7 @@ import Combine
 
 class PublisherMVVMExampleViewModelImpl: PublisherMVVMExampleViewModel {
     var titlePublisher: AnyPublisher<String, Never> {
-        Just("asdf")
+        Just("PublisherMVVM Example")
             .eraseToAnyPublisher()
     }
 
