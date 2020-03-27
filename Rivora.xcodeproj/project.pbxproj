@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282440E4242CD0960022B207 /* Binding+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282440E3242CD0960022B207 /* Binding+KeyPath.swift */; };
 		284FD85E241F70DF00CD2F7F /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD85D241F70DF00CD2F7F /* PersonListViewModel.swift */; };
 		284FD862241F797800CD2F7F /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD861241F797800CD2F7F /* View+AnyView.swift */; };
 		284FD897241FDAEC00CD2F7F /* PersonDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284FD896241FDAEC00CD2F7F /* PersonDetailsViewModel.swift */; };
@@ -20,6 +21,10 @@
 		286AEDFC2423562600451E6D /* View+ReloadOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AEDFB2423562600451E6D /* View+ReloadOn.swift */; };
 		286AEDFF24235CB000451E6D /* PublisherMVVMExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AEDFE24235CB000451E6D /* PublisherMVVMExampleViewModel.swift */; };
 		28E6A8BC241A1469007EEFB2 /* Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A8BB241A1469007EEFB2 /* Introspection.swift */; };
+		28F4C080242DE04900867635 /* ProgrammaticNavigationExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4C07F242DE04900867635 /* ProgrammaticNavigationExampleView.swift */; };
+		28F4C082242DE4BB00867635 /* ProgrammaticNavigationExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4C081242DE4BB00867635 /* ProgrammaticNavigationExampleViewModel.swift */; };
+		28F4C084242DE75800867635 /* ProgrammaticNavigationExampleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4C083242DE75800867635 /* ProgrammaticNavigationExampleDetailsView.swift */; };
+		28F4C086242DECE300867635 /* ProgrammaticNavigationExampleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4C085242DECE300867635 /* ProgrammaticNavigationExampleDetailsViewModel.swift */; };
 		32237B03234E359D00A7984F /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32237B02234E359D00A7984F /* PersonDetailsView.swift */; };
 		323E2C22233AC80800127F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E2C21233AC80800127F2C /* AppDelegate.swift */; };
 		323E2C24233AC80800127F2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E2C23233AC80800127F2C /* SceneDelegate.swift */; };
@@ -33,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282440E3242CD0960022B207 /* Binding+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+KeyPath.swift"; sourceTree = "<group>"; };
 		284FD85D241F70DF00CD2F7F /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
 		284FD861241F797800CD2F7F /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
 		284FD896241FDAEC00CD2F7F /* PersonDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -46,6 +52,10 @@
 		286AEDFB2423562600451E6D /* View+ReloadOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ReloadOn.swift"; sourceTree = "<group>"; };
 		286AEDFE24235CB000451E6D /* PublisherMVVMExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherMVVMExampleViewModel.swift; sourceTree = "<group>"; };
 		28E6A8BB241A1469007EEFB2 /* Introspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introspection.swift; sourceTree = "<group>"; };
+		28F4C07F242DE04900867635 /* ProgrammaticNavigationExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticNavigationExampleView.swift; sourceTree = "<group>"; };
+		28F4C081242DE4BB00867635 /* ProgrammaticNavigationExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticNavigationExampleViewModel.swift; sourceTree = "<group>"; };
+		28F4C083242DE75800867635 /* ProgrammaticNavigationExampleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticNavigationExampleDetailsView.swift; sourceTree = "<group>"; };
+		28F4C085242DECE300867635 /* ProgrammaticNavigationExampleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticNavigationExampleDetailsViewModel.swift; sourceTree = "<group>"; };
 		32237B02234E359D00A7984F /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		323E2C1E233AC80800127F2C /* Rivora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rivora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323E2C21233AC80800127F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +109,7 @@
 				284FD89C2420BF4700CD2F7F /* View+LogLoading.swift */,
 				286AEDFB2423562600451E6D /* View+ReloadOn.swift */,
 				2855FD28242CA0AF000D161C /* ObservableModel.swift */,
+				282440E3242CD0960022B207 /* Binding+KeyPath.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -133,6 +144,10 @@
 		28E6A8C0241A3033007EEFB2 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				28F4C07F242DE04900867635 /* ProgrammaticNavigationExampleView.swift */,
+				28F4C081242DE4BB00867635 /* ProgrammaticNavigationExampleViewModel.swift */,
+				28F4C083242DE75800867635 /* ProgrammaticNavigationExampleDetailsView.swift */,
+				28F4C085242DECE300867635 /* ProgrammaticNavigationExampleDetailsViewModel.swift */,
 				286AEDFD24235C8E00451E6D /* PublisherMVVMExample */,
 				28E6A8C3241A322E007EEFB2 /* ListStylingDemo */,
 				28E6A8C1241A304A007EEFB2 /* PersonList */,
@@ -335,12 +350,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				284FD897241FDAEC00CD2F7F /* PersonDetailsViewModel.swift in Sources */,
+				28F4C080242DE04900867635 /* ProgrammaticNavigationExampleView.swift in Sources */,
 				28545A362419031C000A0B87 /* PersonListView+Row.swift in Sources */,
 				32237B03234E359D00A7984F /* PersonDetailsView.swift in Sources */,
 				28E6A8BC241A1469007EEFB2 /* Introspection.swift in Sources */,
+				282440E4242CD0960022B207 /* Binding+KeyPath.swift in Sources */,
 				286AEDFF24235CB000451E6D /* PublisherMVVMExampleViewModel.swift in Sources */,
 				328D6243234DCB0100E20E18 /* Person+Preview.swift in Sources */,
 				2855FD29242CA0AF000D161C /* ObservableModel.swift in Sources */,
+				28F4C082242DE4BB00867635 /* ProgrammaticNavigationExampleViewModel.swift in Sources */,
 				284FD8C42422532200CD2F7F /* PublisherMVVMExampleView.swift in Sources */,
 				284FD89B24209E6C00CD2F7F /* ObservableObject+SelfFix.swift in Sources */,
 				28545A3824191819000A0B87 /* ListStylingDemoView.swift in Sources */,
@@ -348,6 +366,8 @@
 				284FD85E241F70DF00CD2F7F /* PersonListViewModel.swift in Sources */,
 				323E2C22233AC80800127F2C /* AppDelegate.swift in Sources */,
 				323E2C24233AC80800127F2C /* SceneDelegate.swift in Sources */,
+				28F4C084242DE75800867635 /* ProgrammaticNavigationExampleDetailsView.swift in Sources */,
+				28F4C086242DECE300867635 /* ProgrammaticNavigationExampleDetailsViewModel.swift in Sources */,
 				32E6F3C7234B96A700A34879 /* Person.swift in Sources */,
 				284FD862241F797800CD2F7F /* View+AnyView.swift in Sources */,
 				286AEDFC2423562600451E6D /* View+ReloadOn.swift in Sources */,

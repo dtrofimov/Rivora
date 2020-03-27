@@ -26,7 +26,7 @@ import SwiftUI
     }
     ```
  */
-public protocol ObservableModel {
+public protocol ObservableModel: AnyObject {
     var objectWillChange: ObservableObjectPublisher { get }
 }
 
