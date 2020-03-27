@@ -15,7 +15,7 @@ protocol PersonListViewModel: ObservableModel {
 
 struct PersonListView: View {
     typealias Model = PersonListViewModel
-    @ObservedModel private(set) var model: Model
+    @ObservedModel var model: Model
 
     var body: some View {
         List {

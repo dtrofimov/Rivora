@@ -19,7 +19,7 @@ protocol PersonListRowViewModel: ObservableModel {
 extension PersonListView {
     struct Row: View {
         typealias Model = PersonListRowViewModel
-        @ObservedModel private(set) var model: Model
+        @ObservedModel var model: Model
 
         var body: some View {
             NavigationLink(destination: LazyView(self.model.viewToOpen)) {
