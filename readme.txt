@@ -1,1 +1,0 @@
-A test project to investigate SwiftUI features
