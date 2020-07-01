@@ -33,6 +33,7 @@
 		323E2C2B233AC80A00127F2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323E2C2A233AC80A00127F2C /* Preview Assets.xcassets */; };
 		323E2C2E233AC80A00127F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323E2C2C233AC80A00127F2C /* LaunchScreen.storyboard */; };
 		328D6243234DCB0100E20E18 /* Person+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D6242234DCB0100E20E18 /* Person+Preview.swift */; };
+		329D62B824AC9E40000A23E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329D62B724AC9E40000A23E9 /* HomeView.swift */; };
 		32E6F3C7234B96A700A34879 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E6F3C6234B96A700A34879 /* Person.swift */; };
 		B0797A9984302564A9905DA1 /* Pods_Rivora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86B075B88F78EA993B2D322 /* Pods_Rivora.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		323E2C2D233AC80A00127F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		323E2C2F233AC80A00127F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		328D6242234DCB0100E20E18 /* Person+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Preview.swift"; sourceTree = "<group>"; };
+		329D62B724AC9E40000A23E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		32E6F3C6234B96A700A34879 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8122204CFF4F5CD23E9A702B /* Pods-Rivora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rivora.release.xcconfig"; path = "Target Support Files/Pods-Rivora/Pods-Rivora.release.xcconfig"; sourceTree = "<group>"; };
 		A86B075B88F78EA993B2D322 /* Pods_Rivora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rivora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,10 +146,8 @@
 		28E6A8C0241A3033007EEFB2 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				28F4C07F242DE04900867635 /* ProgrammaticNavigationExampleView.swift */,
-				28F4C081242DE4BB00867635 /* ProgrammaticNavigationExampleViewModel.swift */,
-				28F4C083242DE75800867635 /* ProgrammaticNavigationExampleDetailsView.swift */,
-				28F4C085242DECE300867635 /* ProgrammaticNavigationExampleDetailsViewModel.swift */,
+				329D62B624AC9E29000A23E9 /* Home */,
+				329D62B524AC9DF9000A23E9 /* ProgrammaticNavigationExample */,
 				286AEDFD24235C8E00451E6D /* PublisherMVVMExample */,
 				28E6A8C3241A322E007EEFB2 /* ListStylingDemo */,
 				28E6A8C1241A304A007EEFB2 /* PersonList */,
@@ -223,6 +223,25 @@
 				323E2C2A233AC80A00127F2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		329D62B524AC9DF9000A23E9 /* ProgrammaticNavigationExample */ = {
+			isa = PBXGroup;
+			children = (
+				28F4C07F242DE04900867635 /* ProgrammaticNavigationExampleView.swift */,
+				28F4C081242DE4BB00867635 /* ProgrammaticNavigationExampleViewModel.swift */,
+				28F4C083242DE75800867635 /* ProgrammaticNavigationExampleDetailsView.swift */,
+				28F4C085242DECE300867635 /* ProgrammaticNavigationExampleDetailsViewModel.swift */,
+			);
+			path = ProgrammaticNavigationExample;
+			sourceTree = "<group>";
+		};
+		329D62B624AC9E29000A23E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				329D62B724AC9E40000A23E9 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		EAF4D2CF56A55B477447F03C /* Pods */ = {
@@ -352,6 +371,7 @@
 				284FD897241FDAEC00CD2F7F /* PersonDetailsViewModel.swift in Sources */,
 				28F4C080242DE04900867635 /* ProgrammaticNavigationExampleView.swift in Sources */,
 				28545A362419031C000A0B87 /* PersonListView+Row.swift in Sources */,
+				329D62B824AC9E40000A23E9 /* HomeView.swift in Sources */,
 				32237B03234E359D00A7984F /* PersonDetailsView.swift in Sources */,
 				28E6A8BC241A1469007EEFB2 /* Introspection.swift in Sources */,
 				282440E4242CD0960022B207 /* Binding+KeyPath.swift in Sources */,
